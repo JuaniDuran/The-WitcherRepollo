@@ -99,7 +99,7 @@ nav.responsive ul li a {
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(/imagenes/principal.jpg);
+	,url(../imagenes/principal.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -148,7 +148,7 @@ nav.responsive ul li a {
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(/imagenes/frente2.jpg);
+	,url(../imagenes/frente2.jpg);
 	
 
 }
@@ -158,7 +158,7 @@ nav.responsive ul li a {
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(/imagenes/gcy.jpg);
+	,url(../imagenes/gcy.jpg);
 
 }
 .carta:nth-child(3){
@@ -167,7 +167,7 @@ nav.responsive ul li a {
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(/imagenes/extras.jpg);
+	,url(../imagenes/extras.jpg);
 	
 }
 #frase{
@@ -306,7 +306,7 @@ h4{
 			rgba(0,0,0,0.5),
 			rgba(0,0,0,0.5)
 		)
-		,url(/imagenes/principal.jpg);
+		,url(../imagenes/principal.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
@@ -336,7 +336,7 @@ h4{
 		font-size: 2em;
 	}
 	#introduccion .contenedor-imagen{
-		background-image:url(/imagenes/inicio.jpg);
+		background-image:url(../imagenes/inicio.jpg);
 		background-size: cover;
 		background-position: center center;
 		border-radius: 20px;
@@ -388,16 +388,16 @@ h4{
 
 	}
 	.carta:first-child{
-		background-image: url(/imagenes/frente2.jpg);
+		background-image: url(../imagenes/frente2.jpg);
 		
 	
 	}
 	.carta:nth-child(2){
-		background-image: url(/imagenes/gcy.jpg);
+		background-image: url(../imagenes/gcy.jpg);
 	
 	}
 	.carta:nth-child(3){
-		background-image: url(/imagenes/extras.jpg);
+		background-image: url(../imagenes/extras.jpg);
 		
 	}
 	
