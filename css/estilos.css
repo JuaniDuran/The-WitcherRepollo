@@ -5,6 +5,20 @@
 }
 
 /*video*/
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
+}
+.hamburger{
+	display: block;
+}
+
+
 
 /*video*/
 
@@ -39,54 +53,7 @@ button:hover{
 	max-width: 1400px;
 	margin: auto;
 }
-header{
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	background-image: url(../imagenes/16002.jpg);
-	position: sticky;
-	top: 0;
-	
-}
 
-header div, header a {
-	flex: 1 0 50%;
-}
-header nav {
-	
-	flex-basis: 100%;
-	
-}
-
-.icon {
-	
-	display: flex;
-	justify-content: right;
-	
-	margin-top: -35px;
-	
-}
-nav ul {
-	display: none;
-}
-nav.responsive ul {
-	display: block;
-}
-nav.responsive ul li {
-	display: block;
-	margin-left: 30px;
-	text-align: center;
-	padding: 0.5rem;
-	
-}
-nav.responsive ul li a {
-	padding-right: 0;
-}
-
-.logo  img{
-	display: flex;
-	width: 350px;	
-}
 #inicio{
 	display: flex;
 	align-items: center;
@@ -254,41 +221,48 @@ h4{
 /*MEDIA DESKSTOP*/
 @media (min-width: 480px) { 
 	header{
-		padding-top: 1%;
-		padding-right: 7%;
-		padding-bottom: 2%;
-		padding-left: 2%;
-		display: flex;
-		justify-content: space-between;
+		background-image: url(../imagenes/1600.jpg);
+		background-position:center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		
 	}
-	header div img{
-		margin-top: 20px;
-		margin-left: 15px;
-	}
-	
-	nav ul{
-		margin-top: 55px;
-	}
-	nav ul li{
-		display: inline-block;
-	}
-	nav ul li a{
-		font-size: 1.5rem;
-		padding-right: 2rem;
-		text-transform: uppercase;
-	}
-	nav ul li a:hover{
-		text-decoration: underline;
-		font-weight: 800;
+	li{
+		list-style: none;
 	}
 	a{
+		color: black;
 		text-decoration: none;
-		color: #000000;
 	}
-	.icon { 
-		display: none; 
+	.nav-bar{
+		min-height: 70px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 24px;
 	}
+	.nav-menu{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 60px;
+		font-size: 2em;
+	}
+	.nav-branding{
+		font-size: 2rem;
+	}
+	.nav-link{
+		transition: 0.7s ease;
+	}
+	.nav-link:hover{
+		color:white;
+	}
+	.hamburger{
+		display: none;
+		cursor: pointer;
+	}
+	
+	
 
 	
 	
