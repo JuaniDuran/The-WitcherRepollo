@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    
+    <title>The Witcher</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/LOGOFINAL.png" alt="Logo The Witcher"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="galeria">
+        <article class="galeria_principal">
+            <div>
+               <img src="" alt="">  
+                <h2>La historia del Lobo Blanco</h2> 
+            </div>
+            </article>
+        <article class="secundario">
+            <div class="contenedor">
+                <a class="example-image-link" href="imagenes/galeria/geralt_frente_ojos.jpg" data-lightbox="witcher" data-title="Geralt mirando hacia el frente."><img class="example-image" src="imagenes/galeria/geralt_frente_ojos_min.jpg" alt="Geralt mirando hacia el frente."/></a>
+                <a class="example-image-link" href="imagenes/galeria/cirifrente.jpg" data-lightbox="witcher" data-title="Ciri en el Bosque."><img class="example-image" src="imagenes/galeria/cirifrente_min.jpg" alt="Ciri en el Bosque."/></a>
+                <a class="example-image-link" href="imagenes/galeria/yennefer.jpg" data-lightbox="witcher" data-title="yennefer mirando hacia el frente."><img class="example-image" src="imagenes/galeria/yennefer_min.jpg" alt="yennefer mirando hacia el frente."/></a>
+                <a class="example-image-link" href="imagenes/galeria/jaskier.jpg" data-lightbox="witcher" data-title="Jaskier preocupado."><img class="example-image" src="imagenes/galeria/jaskier_min.jpg" alt="Jaskier preocupado."/></a>
+
+                <a class="example-image-link" href="imagenes/galeria/los3_2.jpg" data-lightbox="witcher" data-title="Ciri, Geralt y Yennefer mirando a un costado."><img class="example-image" src="imagenes/galeria/los3_2_min.jpg" alt="Ciri, Geralt y Yennefer mirando a un costado."/></a>
+                <a class="example-image-link" href="imagenes/galeria/los3.jpg" data-lightbox="witcher" data-title="Ciri, Geralt y Yennefer preparados para la batalla."><img class="example-image" src="imagenes/galeria/los3_min.jpg" alt="Ciri, Geralt y Yennefer preparados para la batalla."/></a>
+                <a class="example-image-link" href="imagenes/galeria/triste.jpg" data-lightbox="witcher" data-title="Geralt y Yennefer abrazando a Ciri."><img class="example-image" src="imagenes/galeria/triste_min.jpg" alt="Geralt y Yennefer abrazando a Ciri."/></a>
+                <a class="example-image-link" href="imagenes/galeria/jaskier_garret.jpg" data-lightbox="witcher" data-title="Geralt y Jaskier."><img class="example-image" src="imagenes/galeria/jaskier_garret_min.jpg" alt="Geralt y Jaskier."/></a>
+            </div>
+        </article>
+    </section>
+    <footer>
+        
+        <div class="container">
+            <a href="https://www.instagram.com/witchernetflix?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="imagenes/redes/instagram_mobile.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/witchernetflix?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="imagenes/redes/facebook_mobile.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/witchernetflix?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="imagenes/redes/twitter_mobile.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/witchernetflix?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="imagenes/redes/youtube_mobile.png" alt="Youtube"></a>
+        </div>
+        <p>&copy; Todos los derechos reservados. Duran Juan Ignacio</p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

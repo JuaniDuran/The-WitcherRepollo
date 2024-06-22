@@ -1,0 +1,455 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/*video*/
+
+/*video*/
+
+body{
+	font-family: "Cinzel", serif;
+	margin: 0;
+	background-image: url(../imagenes/16002.jpg);
+	background-size: cover; 
+	background-repeat: no-repeat;
+
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	color:white;
+	background-color: #146d79;
+}
+button:hover{
+	background-color: #12626d;
+}
+.container{
+	max-width: 1400px;
+	margin: auto;
+}
+header{
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-image: url(../imagenes/16002.jpg);
+	position: sticky;
+	top: 0;
+	
+}
+
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	
+	flex-basis: 100%;
+	
+}
+
+.icon {
+	
+	display: flex;
+	justify-content: right;
+	
+	margin-top: -35px;
+	
+}
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	margin-left: 30px;
+	text-align: center;
+	padding: 0.5rem;
+	
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+
+.logo  img{
+	display: flex;
+	width: 350px;	
+}
+#inicio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(/imagenes/principal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio h1{
+	color: white;
+}
+
+
+#introduccion .container{
+	text-align: center;
+	padding: 200px 12px;
+	
+}
+#introduccion .container p{
+	font-size: 1.5em;
+}
+
+#contenido{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+}
+#contenido .container{
+	padding: 150px 12px;
+
+}
+#contenido h2{
+	margin-top: 0;
+	font-size: 3em;
+}
+#contenido p{
+	display: none;
+}
+#contenido .carta{
+	background-position: center center;
+	background-size: cover;
+	padding: 50px;
+	margin: 30px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px black;
+}
+.carta:first-child{
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(/imagenes/frente2.jpg);
+	
+
+}
+.carta:nth-child(2){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(/imagenes/gcy.jpg);
+
+}
+.carta:nth-child(3){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(/imagenes/extras.jpg);
+	
+}
+#frase{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	height: 80vh;
+}
+#frase h2{
+	text-shadow: black 2px 2px 10px;
+}
+footer .container{
+	margin-top: 10px;
+	
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .container a{
+	padding: 10px;
+}
+footer p{
+	padding: 10px;
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+
+
+#galeria{
+	max-width: 400px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}/*
+.galeria_principal{
+	height: 250px;
+	padding: 10%;
+}
+.secundario{
+	margin-top: 1%;
+	display: block;
+}
+.secundario div{
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+.secundario div a img{
+	margin-bottom: 1rem;
+}
+.galeria_principal div h2{
+
+	display: block;
+	justify-content: left;
+	font-size: 1em;
+	margin-block-start: 5em;
+	
+	margin-inline-start: 1px;
+	margin-inline-end: 1px;
+	font-weight: bold;
+	unicode-bidi: isolate;
+	
+}
+
+
+h4{
+	font-size: 1rem;
+}*/
+
+
+
+
+
+
+
+
+/*MEDIA DESKSTOP*/
+@media (min-width: 480px) { 
+	header{
+		padding-top: 1%;
+		padding-right: 7%;
+		padding-bottom: 2%;
+		padding-left: 2%;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	header div img{
+		margin-top: 20px;
+		margin-left: 15px;
+	}
+	
+	nav ul{
+		margin-top: 55px;
+	}
+	nav ul li{
+		display: inline-block;
+	}
+	nav ul li a{
+		font-size: 1.5rem;
+		padding-right: 2rem;
+		text-transform: uppercase;
+	}
+	nav ul li a:hover{
+		text-decoration: underline;
+		font-weight: 800;
+	}
+	a{
+		text-decoration: none;
+		color: #000000;
+	}
+	.icon { 
+		display: none; 
+	}
+
+	
+	
+	#inicio{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		)
+		,url(/imagenes/principal.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	#introduccion .container{
+		display: flex;
+		justify-content: center;
+		
+	}
+	#introduccion .texto{
+		width: 50%;
+		text-align: initial;
+		padding: 0px 30px;
+		max-width: 600px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 100px;
+		
+	}
+	#introduccion h2{
+		font-size: 4em;
+		
+	}
+	#introduccion .texto p{
+		font-size: 2em;
+	}
+	#introduccion .contenedor-imagen{
+		background-image:url(/imagenes/inicio.jpg);
+		background-size: cover;
+		background-position: center center;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px;
+		height: 500px;
+		width: 400px;
+	}
+
+	#contenido .divisiones{
+		display: flex;
+		justify-content: center;
+	
+	
+	}
+	#contenido h2{
+		margin-bottom: 100px;
+	}
+	#contenido p{
+		display: block;
+		font-size: 1.5em;
+		text-align: start;
+		font-weight: bold;
+		margin-bottom: 30px;
+		
+	}
+	
+	
+	
+	#contenido h3{
+		margin-top: 0;
+		font-size: 2.5em;
+		
+	}
+	#contenido .carta{
+		padding: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:  center center;
+		width: 400px;
+		height: 600px;
+		
+	}
+	#boton{
+		margin-top: 380px;
+	}
+	#frase h2{
+		font-size: 5em;
+		text-align: center;
+
+	}
+	.carta:first-child{
+		background-image: url(/imagenes/frente2.jpg);
+		
+	
+	}
+	.carta:nth-child(2){
+		background-image: url(/imagenes/gcy.jpg);
+	
+	}
+	.carta:nth-child(3){
+		background-image: url(/imagenes/extras.jpg);
+		
+	}
+	
+
+	/*GALERIA*/
+	#galeria{
+		max-width:1300px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.galeria_principal{
+		
+		width: 100%;
+		height: 700px;
+		background-image: url(../imagenes/espada2.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		color: #ffffff;
+		margin-top: 50px;
+		
+		
+	}
+	.galeria_principal div h2{	
+		margin-top: 350px;
+		margin-right: 500px;
+		font-size: 2.5rem;
+		
+	}
+	
+	
+	.contenedor{ 
+		width:100%;
+		margin-top: 60px;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;	
+	}
+	
+	.contenedor a img{
+		
+		margin: 10px;
+	
+	}
+	
+	h4{
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+	
+}
