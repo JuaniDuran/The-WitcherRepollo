@@ -4,24 +4,50 @@
 	box-sizing: border-box;
 }
 
-/*video*/
-.bar{
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background-color: white;
+header{
+	background-image: url(../imagenes/16002.jpg);
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
-.hamburger{
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: center;
+	margin-left: 2%;
+	color: black;
+}
+nav ul {
+	display: none;
+}
+nav.responsive ul {
 	display: block;
 }
-
-
-
-/*video*/
-
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+	color: black;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+nav.responsive ul li a:hover {
+	color: white;
+	transition: 0.3s ease-in-out;
+}
 body{
 	font-family: "Cinzel", serif;
 	margin: 0;
@@ -30,6 +56,18 @@ body{
 	background-repeat: no-repeat;
 
 }
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.logo img{
+	padding: 20px;
+	width: 100%;
+}
+
 
 h1{font-size: 3.5em;}
 h2{font-size: 2.7em;}
@@ -73,6 +111,7 @@ button:hover{
 }
 #inicio h1{
 	color: white;
+	text-shadow: 5px 5px 5px black;
 }
 
 
@@ -90,53 +129,45 @@ button:hover{
 	color: white;
 	text-align: center;
 }
-#contenido .container{
-	padding: 150px 12px;
 
-}
 #contenido h2{
-	margin-top: 0;
+	padding-top: 20px;
 	font-size: 3em;
+	text-shadow: 5px 5px 5px black;
 }
-#contenido p{
-	display: none;
+.divisiones{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 #contenido .carta{
-	background-position: center center;
-	background-size: cover;
-	padding: 50px;
-	margin: 30px;
-	border-radius: 15px;
-	box-shadow: 5px 5px 10px black;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 30px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
 }
-.carta:first-child{
-	background-image: linear-gradient(
-		0deg,
-		rgba(0,0,0,0.5),
-		rgba(0,0,0,0.5)
-	)
-	,url(../imagenes/frente2.jpg);
+.carta img{
 	
-
-}
-.carta:nth-child(2){
-	background-image: linear-gradient(
-		0deg,
-		rgba(0,0,0,0.5),
-		rgba(0,0,0,0.5)
-	)
-	,url(../imagenes/gcy.jpg);
-
-}
-.carta:nth-child(3){
-	background-image: linear-gradient(
-		0deg,
-		rgba(0,0,0,0.5),
-		rgba(0,0,0,0.5)
-	)
-	,url(../imagenes/extras.jpg);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	
 }
+
+.carta p{
+	font-size: 3rem;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
 #frase{
 	display: flex;
 	flex-direction: column;
@@ -182,12 +213,12 @@ footer p{
 }
 .back-to-top{
     position:fixed;
-    top: 20rem;
-    right: 2rem;
+    top: 52rem;
+    right: 1rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(13, 6, 112, 0.7);
+    background-color: rgba(122, 122, 122, 0.7);
     border-radius: 25px;
     padding: 0.5rem;
     text-decoration: none;
@@ -196,12 +227,12 @@ footer p{
 
 .back-to-top span{
     color:#fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 0.2s ease-out;
 }
 
 .back-to-top:hover{
-    background-color: #5e1abe;
+    background-color: #4c7d91;
 }
 .back-to-top:hover span{
     transform: translateY(-4px);
@@ -225,7 +256,9 @@ html{
 	background-position: center center;	
 }
 #galeria-inicio h1{
+	font-size: 4em;
 	color: white;
+	text-shadow: 5px 5px 5px black;
 	
 }
 #introduccion-galeria .container-galeria{
@@ -250,6 +283,7 @@ html{
 #contenido-galeria h2{
 	margin-bottom: 100px;
 	font-size: 3em;
+	text-shadow: 5px 5px 5px black;
 }
 .contenedor-imagenes{
 	display: flex;
@@ -281,6 +315,89 @@ html{
 #frase-galeria h2{
 	text-shadow: black 2px 2px 10px;
 }
+/*CONTACTO*/
+.contacto-titulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+.cont h3{
+	font-size: 3em;
+	color: rgb(0, 0, 0);
+	;
+}
+.form{
+	width:80%;
+	height:500px;
+
+	border-radius:20px;
+	box-shadow:0 0 40px -10px #000;
+	margin:calc(1vh) auto;
+	padding:10px 30px;
+	box-sizing:border-box;
+	font-family:'Montserrat',sans-serif;
+	font-size: 14px;
+	position:relative
+	
+}
+
+h3.contacto{
+	margin:10px 0;
+	padding-bottom:10px;
+	width:150px;
+	color:#78788c;
+	border-bottom:3px solid #78788c;
+	font-size: large;
+}
+
+input{
+	width:100%;
+	margin-top: 30px;
+	padding:10px;
+	box-sizing:border-box;
+	background:none;
+	outline:none;
+	resize:none;
+	border:0;
+	transition:all .3s;
+	border-bottom:2px solid #bebed2
+}
+
+input:focus{
+	border-bottom:2px solid #78788c
+}
+
+button{
+	padding:8px 12px;
+	margin:50px 0 0;
+	border:2px solid #78788c;
+	background:#5a5a6e;color:#ffffff;
+	cursor:pointer;
+	transition:all .3s;
+}
+
+button:hover{
+	background:#78788c;
+	color:#fff;
+}
+
+div.pie_contacto{
+	position:absolute;
+	bottom:-15px;
+	right:-6%;
+	background:#50505a;
+	color:#fff;
+	width:420px;
+	padding:16px 4px 16px 0;
+	border-radius:6px;
+	box-shadow:10px 10px 40px -14px #000;
+}
+
+div.pie_contacto span{
+	margin:0 5px 0 15px;
+}
 
 
 
@@ -300,10 +417,15 @@ html{
 		background-position:center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		/*position:fixed;
+		z-index: 1;
+		width: 100%;*/
 		
-		
-		
-		
+			
+	}
+	
+	.icon{
+		display: none;
 	}
 	li{
 		list-style: none;
@@ -319,10 +441,15 @@ html{
 		
 	}
 	.logo img{
-		padding: 30px;
+		width:1000px;
+		height: 150px;
+		margin-top: 0px;
+		margin-left: 22%;
 		
 
+		
 	}
+	
 	.nav-bar{
 		min-height: 70px;
 		display: flex;
@@ -331,12 +458,15 @@ html{
 		padding: 0 24px;
 		
 		
+		
 	}
 	.nav-menu{
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		font-size: 2em;
+		font-size: 1.6em;
+		margin-top: 30px;
+		
 	}
 	.nav-menu li a{
 		padding-right:100px;
@@ -355,14 +485,6 @@ html{
 	.nav-link:hover{
 		color:white; 
 	}
-	.hamburger{
-		display: none;
-		cursor: pointer;
-	}
-	
-	
-
-	
 	
 	#inicio{
 		width: 100%;
@@ -381,8 +503,9 @@ html{
 		)
 		,url(../imagenes/principal.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
+		background-size:cover;
+		background-position:center center;
+		
 	}
 	#inicio h1{
 		font-size: 2.5em;
@@ -426,15 +549,48 @@ html{
 
 	#contenido .divisiones{
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
-	
-	
+		align-items: center;
+		height: 90vh;
 	}
-	#contenido h2{
-		margin-bottom: 100px;
+	.titulo{
+		padding-top: 100px;
+		
+		text-shadow: 5px 5px 10px black;
+	}
+	
+	#contenido .carta{
+		width: 400px;
+		height: 600px;
+		overflow: hidden;
+		position: relative;
+		margin: 70px auto;
+		border-radius: 20px;
+		box-shadow: 5px 8px 12px black;
+		transition: all 0.3s ease-in-out;
+	}
+	.carta img{
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 		
 	}
-	#contenido p{
+	
+	.carta p{
+		font-size: 3rem;
+		color: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+	}
+	.carta:hover{
+		transform: scale(1.1);
+	}
+	/*#contenido p{
 		display: block;
 		font-size: 1.5em;
 		text-align: start;
@@ -443,45 +599,19 @@ html{
 		
 	}
 	
-	
-	
-	#contenido h3{
-		margin-top: 0;
-		font-size: 2.5em;
-		
-		
-	}
-	#contenido .carta{
+	/*#contenido .carta {
 		padding: 50px;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position:  center center;
 		width: 400px;
 		height: 600px;
 		
-	}
-	#boton{
-		margin-top: 380px;
-	}
+	}*/
 	#frase h2{
 		text-shadow: black 2px 2px 5px;
 		font-size: 2.5em;
 		text-align: center;
 
 	}
-	.carta:first-child{
-		background-image: url(../imagenes/frente2.jpg);
-		
 	
-	}
-	.carta:nth-child(2){
-		background-image: url(../imagenes/gcy.jpg);
-	
-	}
-	.carta:nth-child(3){
-		background-image: url(../imagenes/extras.jpg);
-		
-	}
 	.material-icons {
 		font-family: 'Material Symbols Outlined';
 		font-weight: normal;
@@ -497,12 +627,12 @@ html{
 	}
 	.back-to-top{
 		position:fixed;
-		top: 20rem;
+		top: 55rem;
 		right: 2rem;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		background-color: rgba(13, 6, 112, 0.7);
+		background-color: rgba(0, 0, 0, 0.7);
 		border-radius: 25px;
 		padding: 0.5rem;
 		text-decoration: none;
@@ -516,14 +646,15 @@ html{
 	}
 	
 	.back-to-top:hover{
-		background-color: #5e1abe;
+		background-color: #365664;
 	}
 	.back-to-top:hover span{
 		transform: translateY(-4px);
 	}
-	/*html{
-		scroll-behavior: smooth;
-	} REVISAR*/
+	html{
+		scroll-behavior:smooth;
+	} 
+	
 
 	/*GALERIA*/
 	#galeria-inicio{
@@ -607,6 +738,7 @@ html{
 		flex-wrap: wrap;
 		
 		
+		
 
 	}
 	.contenedor-imagenes img{
@@ -616,6 +748,7 @@ html{
 	}
 	.contenedor-imagenes img:hover{
 		transform: scale(1.1);
+		transition: all 0.3s ease-in-out;
 		
 		
 	
@@ -626,6 +759,105 @@ html{
 		font-size: 2.5em;
 		text-align: center;
 		
+	}
+
+
+
+
+
+	/*CONTACTO*/
+	#seccion-formulario{
+		height: 700px;
+		background-color: rgba(0,0,0,0.3);
+
+	}
+	.contacto-titulo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		
+	}
+	.cont h3{
+		padding: 30px;
+		font-size: 3em;
+		color: rgb(0, 0, 0);
+		
+	}
+	.form{
+		width:80%;
+		height:500px;
+		background-image:url(../imagenes/juntos.jpg);
+		background-position-y: -50px;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		border-radius:20px;
+		box-shadow:0 0 40px -10px #000;
+		margin:calc(1vh) auto;
+		padding:10px 30px;
+		box-sizing:border-box;
+		font-family:'Montserrat',sans-serif;
+		font-size: 14px;
+		position:relative
+		
+	}
+	
+	h3.contacto{
+		margin:10px 0;
+		padding-bottom:10px;
+		width:150px;
+		color:#78788c;
+		border-bottom:3px solid #78788c;
+		font-size: large;
+	}
+	
+	input{
+		width:100%;
+		margin-top: 30px;
+		padding:10px;
+		box-sizing:border-box;
+		background:none;
+		outline:none;
+		resize:none;
+		border:0;
+		transition:all .3s;
+		border-bottom:2px solid #bebed2
+		
+	}
+	
+	input:focus{
+		border-bottom:2px solid #78788c
+	}
+	
+	button{
+		padding:8px 12px;
+		margin:50px 0 0;
+		border:2px solid #78788c;
+		background:#5a5a6e;color:#ffffff;
+		cursor:pointer;
+		transition:all .3s;
+	}
+	
+	button:hover{
+		background:#78788c;
+		color:#fff;
+	}
+	
+	div.pie_contacto{
+		position:absolute;
+		bottom:-15px;
+		right:30%;
+		background:#50505a;
+		color:#fff;
+		width:420px;
+		padding:16px 4px 16px 0;
+		border-radius:6px;
+		box-shadow:10px 10px 40px -14px #000;
+	}
+	
+	div.pie_contacto span{
+		margin:0 5px 0 15px;
 	}
 	
 	

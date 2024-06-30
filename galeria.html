@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>The Witcher - Galería</title>
 </head>
 <body>
@@ -22,22 +22,15 @@
             <a href="index.html" class="nav-branding"><img src="imagenes/logo.png" alt="Logo The Witcher"></a>
         </div> 
 
-        <nav class="nav-bar">
-            
-
-            <ul class="nav-menu">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav class="nav-bar" id="menu_bar">
+           <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">INICIO</a></li>
                 <li class="nav-item"><a href="personajes.html" class="nav-link">PERSONAJES</a></li>
                 <li class="nav-item"><a href="galeria.html" class="nav-link">GALERÍA</a></li>
-                <li class="nav-item"><a href="resenas.html" class="nav-link">RESEÑAS</a></li>
+                <li class="nav-item"><a href="temporadas.html" class="nav-link">TEMPORADAS</a></li>
                 <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
         </nav>
     </header>
 
@@ -50,7 +43,7 @@
              <div class="contenedor-imagen-galeria"></div>
                  <div class="texto-galeria">
                  <h2>YENNEFER</h2>
-                 <p>En cada uno de nosotros hay caos y orden, bien y mal. <br> Pero esto se puede y se debe controlar. <br> Hay que aprenderlo. Y tú estás aprendiéndolo</p>
+                 <p>"En cada uno de nosotros hay caos y orden, bien y mal. <br> Pero esto se puede y se debe controlar. <br> Hay que aprenderlo. Y tú estás aprendiéndolo."</p>
              </div>
          </div> 
      </section>
@@ -67,6 +60,11 @@
                     <a class="example-image-link" href="imagenes/galeria/yennefer.jpg" data-lightbox="witcher" data-title="yennefer mirando hacia el frente."><img class="example-image" src="imagenes/galeria/yennefer_min.jpg" alt="yennefer mirando hacia el frente."/></a>
                     <a class="example-image-link" href="imagenes/galeria/jaskier.jpg" data-lightbox="witcher" data-title="Jaskier preocupado."><img class="example-image" src="imagenes/galeria/jaskier_min.jpg" alt="Jaskier preocupado."/></a>
     
+                    <a class="example-image-link" href="imagenes/galeria/los3_2.jpg" data-lightbox="witcher" data-title="Ciri, Geralt y Yennefer mirando a un costado."><img class="example-image" src="imagenes/galeria/los3_2_min.jpg" alt="Ciri, Geralt y Yennefer mirando a un costado."/></a>
+                    <a class="example-image-link" href="imagenes/galeria/los3.jpg" data-lightbox="witcher" data-title="Ciri, Geralt y Yennefer preparados para la batalla."><img class="example-image" src="imagenes/galeria/los3_min.jpg" alt="Ciri, Geralt y Yennefer preparados para la batalla."/></a>
+                    <a class="example-image-link" href="imagenes/galeria/triste.jpg" data-lightbox="witcher" data-title="Geralt y Yennefer abrazando a Ciri."><img class="example-image" src="imagenes/galeria/triste_min.jpg" alt="Geralt y Yennefer abrazando a Ciri."/></a>
+                    <a class="example-image-link" href="imagenes/galeria/jaskier_garret.jpg" data-lightbox="witcher" data-title="Geralt y Jaskier."><img class="example-image" src="imagenes/galeria/jaskier_garret_min.jpg" alt="Geralt y Jaskier."/></a>
+
                     <a class="example-image-link" href="imagenes/galeria/los3_2.jpg" data-lightbox="witcher" data-title="Ciri, Geralt y Yennefer mirando a un costado."><img class="example-image" src="imagenes/galeria/los3_2_min.jpg" alt="Ciri, Geralt y Yennefer mirando a un costado."/></a>
                     <a class="example-image-link" href="imagenes/galeria/los3.jpg" data-lightbox="witcher" data-title="Ciri, Geralt y Yennefer preparados para la batalla."><img class="example-image" src="imagenes/galeria/los3_min.jpg" alt="Ciri, Geralt y Yennefer preparados para la batalla."/></a>
                     <a class="example-image-link" href="imagenes/galeria/triste.jpg" data-lightbox="witcher" data-title="Geralt y Yennefer abrazando a Ciri."><img class="example-image" src="imagenes/galeria/triste_min.jpg" alt="Geralt y Yennefer abrazando a Ciri."/></a>
@@ -94,15 +92,15 @@
         <span class="material-icons">arrow_upward</span>
     </a>
 
-    <!-- <script type="text/javascript"> 
+    <script type="text/javascript">
         function myFunction() {
           var x = document.getElementById("menu_bar");
           if (x.className === "") {
             x.className += " responsive";
           } else {
             x.className = "";
-          }-->
-       
+          }
+        }
     </script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
