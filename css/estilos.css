@@ -159,7 +159,7 @@ button:hover{
 }
 
 .carta p{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: white;
 	position: absolute;
 	top: 50%;
@@ -178,6 +178,7 @@ button:hover{
 	height: 80vh;
 }
 #frase h2{
+	padding: 20px;
 	text-shadow: black 2px 2px 10px;
 }
 footer .container{
@@ -250,7 +251,12 @@ html{
 	text-align: center;
 	flex-direction: column;
 	height: 90vh;
-	background-image: url(../imagenes/espada2.jpg);
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(../imagenes/espada.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;	
@@ -315,6 +321,7 @@ html{
 #frase-galeria h2{
 	text-shadow: black 2px 2px 10px;
 }
+
 /*CONTACTO*/
 .contacto-titulo{
 	display: flex;
@@ -399,19 +406,446 @@ div.pie_contacto span{
 	margin:0 5px 0 15px;
 }
 
+/*PERSONAJES*/
+#inicio-personajes{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(../imagenes/ps/prota.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-personajes h1{
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+#contenido-personajes{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+}
+
+#contenido-personajes h2{
+	padding-top: 20px;
+	font-size: 3em;
+	text-shadow: 5px 5px 5px black;
+}
+.divisiones-personajes{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#contenido-personajes .carta-personajes{
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	margin: 30px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+}
+.carta-personajes img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.carta-personajes p{
+	font-size: 2.5rem;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+/*GERALT*/
+#inicio-geralt{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: url(../imagenes/galeria/inicio-geralt.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-geralt h1{
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
 
 
+#introduccion-geralt .container-geralt{
+	text-align: center;
+	padding: 200px 12px;
+	
+}
+#introduccion-geralt .container-geralt p{
+	font-size: 1.5em;
+	color: white;
+}
+#contenido-geralt{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	
+}
+#contenido-geralt h2{
+	padding: 10px;
+	text-shadow: 5px 5px 5px black;
+}
+#contenido-geralt p{
+	font-family: "Baskervville SC", serif;
+	padding: 10px;
+	font-size: 1.7rem;
+	text-align: left;
+}
+
+#contenido-geralt .carta-geralt{
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	margin: 30px auto;
+
+	box-shadow: 5px 8px 12px black;
+}
+.carta-geralt img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+.resaltar-geralt{
+	font-weight: bold;
+	font-style: italic;
+	background-color: #000000;
+	border-radius: 10px;
+}
+/*YENNEFFER*/
+#inicio-yen{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: url(../imagenes/ps/yen3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-yen h1{
+	margin-top: 300px;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
 
 
+#introduccion-yen .container-yen{
+	text-align: center;
+	padding: 200px 12px;
+	
+}
+#introduccion-yen .container-yen p{
+	font-size: 1.5em;
+	color: white;
+}
+#contenido-yen{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	
+}
+#contenido-yen h2{
+	padding: 10px;
+	text-shadow: 5px 5px 5px black;
+}
+#contenido-yen p{
+	font-family: "Baskervville SC", serif;
+	padding: 10px;
+	font-size: 1.7rem;
+	text-align: left;
+}
+
+#contenido-yen .carta-yen{
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	margin: 30px auto;
+
+	box-shadow: 5px 8px 12px black;
+}
+.carta-yen img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+/*CIRI*/
+#inicio-ciri{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: url(../imagenes/ps/inicio-ciri.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-ciri h1{
+	margin-top: 400px;
+	padding: 20px;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
 
 
+#introduccion-ciri .container-ciri{
+	text-align: center;
+	padding: 200px 12px;
+	
+}
+#introduccion-ciri .container-ciri p{
+	font-size: 1.5em;
+	color: white;
+}
+#contenido-ciri{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	
+}
+#contenido-ciri h2{
+	padding: 10px;
+	text-shadow: 5px 5px 5px black;
+}
+#contenido-ciri p{
+	font-family: "Baskervville SC", serif;
+	padding: 10px;
+	font-size: 1.7rem;
+	text-align: left;
+}
+
+#contenido-ciri .carta-ciri{
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	margin: 30px auto;
+
+	box-shadow: 5px 8px 12px black;
+}
+.carta-ciri img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+/*JASKIER*/
+#inicio-jaskier{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: url(../imagenes/ps/jaskier3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-jaskier h1{
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+
+
+#introduccion-jaskier .container-jaskier{
+	text-align: center;
+	padding: 200px 12px;
+	
+}
+#introduccion-jaskier .container-jaskier p{
+	font-size: 1.5em;
+	color: white;
+}
+#contenido-jaskier{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	
+}
+#contenido-jaskier h2{
+	padding: 10px;
+	text-shadow: 5px 5px 5px black;
+}
+#contenido-jaskier p{
+	font-family: "Baskervville SC", serif;
+	padding: 10px;
+	font-size: 1.7rem;
+	text-align: left;
+}
+
+#contenido-jaskier .carta-jaskier{
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	margin: 30px auto;
+
+	box-shadow: 5px 8px 12px black;
+}
+.carta-jaskier img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+/*TEMPORADAS*/
+#inicio-temporadas{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(../imagenes/ps/temporadas.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-temporadas h1{
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+#contenido-temporadas{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	
+}
+#contenido-temporadas h2{
+	margin-top: 50px;
+	padding: 20px;
+	text-shadow: 5px 5px 5px black;
+}
+#contenido-temporadas p{
+	font-family: "Baskervville SC", serif;
+	padding: 10px;
+	font-size: 1.7rem;
+	text-align: left;
+}
+
+#contenido-temporadas .carta-temporadas{
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+	margin: 30px auto;
+
+	box-shadow: 5px 8px 12px black;
+}
+.carta-temporadas img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+.parrafo-temporadas p{
+	font-family: "Baskervville SC", serif;
+
+}
+/*CONTACTO*/
+#inicio-contacto{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(../imagenes/ps/CONTACTO.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-contacto h1{
+	
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+/*EXTRAS*/
+#inicio-extras{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)
+	)
+	,url(../imagenes/ps/EXTRAS.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#inicio-extras h1{
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
 
 
 
 
 
 /*MEDIA DESKSTOP*/
-@media (min-width: 480px) { 
+@media (min-width: 481px) { 
 	header{
 		background-image: url(../imagenes/16002.jpg);
 		background-position:center center;
@@ -449,7 +883,6 @@ div.pie_contacto span{
 
 		
 	}
-	
 	.nav-bar{
 		min-height: 70px;
 		display: flex;
@@ -469,8 +902,8 @@ div.pie_contacto span{
 		
 	}
 	.nav-menu li a{
-		padding-right:100px;
-		padding-left:100px;
+		padding-right:80px;
+		padding-left:80px;
 	}
 	
 	.nav-branding{
@@ -590,21 +1023,7 @@ div.pie_contacto span{
 	.carta:hover{
 		transform: scale(1.1);
 	}
-	/*#contenido p{
-		display: block;
-		font-size: 1.5em;
-		text-align: start;
-		font-weight: bold;
-		margin-bottom: 30px;
-		
-	}
 	
-	/*#contenido .carta {
-		padding: 50px;
-		width: 400px;
-		height: 600px;
-		
-	}*/
 	#frase h2{
 		text-shadow: black 2px 2px 5px;
 		font-size: 2.5em;
@@ -667,7 +1086,12 @@ div.pie_contacto span{
 		font-size: 1.2em;
 		align-items:start;
 
-		background-image: url(../imagenes/espada2.jpg);
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		)
+		,url(../imagenes/espada.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;	
@@ -736,10 +1160,6 @@ div.pie_contacto span{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		
-		
-		
-
 	}
 	.contenedor-imagenes img{
 		margin: 15px;
@@ -860,5 +1280,567 @@ div.pie_contacto span{
 		margin:0 5px 0 15px;
 	}
 	
+	/*PERSONAJES*/
+	#inicio-personajes{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		)
+		,url(../imagenes/ps/prota.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-personajes h1{
+		text-align: center;
+		padding: 20px;
+		font-size: 2em;
+	}
+	#contenido-personajes .divisiones-personajes{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 70vh;
+	}
+	.titulo-personajes{
+		padding-top: 10px;
+		text-shadow: 5px 5px 10px black;
+	}
+	
+	#contenido-personajes .carta-personajes{
+		width: 380px;
+		height: 550px;
+		overflow: hidden;
+		position: relative;
+		margin: 70px auto;
+		border-radius: 20px;
+		box-shadow: 5px 8px 12px black;
+		transition: all 0.3s ease-in-out;
+	}
+	.carta-personajes img{
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+	}
+	
+	.carta-personajes p{
+		font-size: 3rem;
+		color: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+	}
+	.carta-personajes:hover{
+		transform: scale(1.1);
+	}
+	/*GERALT*/
+	#inicio-geralt{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: url(../imagenes/galeria/inicio-geralt.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-geralt h1{
+		font-size: 2.5em;
+	}
+
+	#introduccion-geralt .container-geralt{
+		display: flex;
+		justify-content: center;
+		
+	}
+	#introduccion-geralt .texto-geralt{
+		width: 50%;
+		text-align: initial;
+		padding: 0px 30px;
+		max-width: 600px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 100px;
+		
+		
+	}
+	#introduccion-geralt h2{
+		font-size: 4em;
+		
+		
+	}
+	#introduccion-geralt .texto-geralt p{
+		font-size: 1.5em;
+		color: black; 
+	}
+	#introduccion-geralt .contenedor-imagen-geralt{
+		background-image:url(../imagenes/inicio.jpg);
+		background-size: cover;
+		background-position: center center;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px;
+		height: 500px;
+		width: 400px;
+	}
+	#contenido-geralt{
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-align: center;
+		
+	}
+	#contenido-geralt h2{
+		padding: 10px;
+		text-shadow: 5px 5px 5px black;
+	}
+	#contenido-geralt p{
+		font-family: "Baskervville SC", serif;
+		padding: 20px;
+		font-size: 2.2rem;
+		text-align: left;
+	}
+
+	#contenido-geralt .carta-geralt{
+		width: 70%;
+		height: 60vh;
+		border-radius: 20px;
+
+		box-shadow: 5px 8px 12px black;
+	}
+	.carta-geralt img{
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+		
+	}
+	.resaltar-geralt{
+		font-weight: bold;
+		font-style: italic;
+		background-color: #000000;
+		border-radius: 10px;
+	}
+	/*CIRI*/
+	#inicio-ciri{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: url(../imagenes/ps/inicio-ciri.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-ciri h1{
+		
+		font-size: 2.5em;
+	}
+
+	#introduccion-ciri .container-ciri{
+		display: flex;
+		justify-content: center;
+		
+	}
+	#introduccion-ciri .texto-ciri{
+		width: 50%;
+		text-align: initial;
+		padding: 0px 30px;
+		max-width: 600px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 100px;
+		
+		
+	}
+	#introduccion-ciri h2{
+		font-size: 4em;
+		
+		
+	}
+	#introduccion-ciri .texto-ciri p{
+		font-size: 1.5em;
+		color: black; 
+	}
+	#introduccion-ciri .contenedor-imagen-ciri{
+		background-image:url(../imagenes/galeria/ciri.jpg);
+		background-size: cover;
+		background-position: center center;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px;
+		height: 500px;
+		width: 400px;
+	}
+	#contenido-ciri{
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-align: center;
+		
+	}
+	#contenido-ciri h2{
+		padding: 10px;
+		text-shadow: 5px 5px 5px black;
+	}
+	#contenido-ciri p{
+		font-family: "Baskervville SC", serif;
+		padding: 20px;
+		font-size: 2.2rem;
+		text-align: left;
+	}
+
+	#contenido-ciri .carta-ciri{
+		width: 70%;
+		height: 60vh;
+		border-radius: 20px;
+
+		box-shadow: 5px 8px 12px black;
+	}
+	.carta-ciri img{
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+		
+	}
+	.resaltar-ciri{
+		font-weight: bold;
+		font-style: italic;
+		background-color: #000000;
+		border-radius: 10px;
+	}
+	/*YENNEFFER*/
+	#inicio-yen{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: url(../imagenes/ps/yen3.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-yen h1{
+		font-size: 2.5em;
+	}
+
+	#introduccion-yen .container-yen{
+		display: flex;
+		justify-content: center;
+		
+	}
+	#introduccion-yen .texto-yen{
+		width: 50%;
+		text-align: initial;
+		padding: 0px 30px;
+		max-width: 600px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 100px;
+		
+		
+	}
+	#introduccion-yen h2{
+		font-size: 4em;
+		
+		
+	}
+	#introduccion-yen .texto-yen p{
+		
+		font-size: 1.5em;
+		color: black; 
+	}
+	#introduccion-yen .contenedor-imagen-yen{
+		background-image:url(../imagenes/yennefer2.jpg);
+		background-size: cover;
+		background-position: center center;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px;
+		height: 500px;
+		width: 400px;
+	}
+	#contenido-yen{
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-align: center;
+		
+	}
+	#contenido-yen h2{
+		padding: 10px;
+		text-shadow: 5px 5px 5px black;
+	}
+	#contenido-yen p{
+		font-family: "Baskervville SC", serif;
+		padding: 20px;
+		font-size: 2.2rem;
+		text-align: left;
+	}
+
+	#contenido-yen .carta-yen{
+		width: 70%;
+		height: 60vh;
+		border-radius: 20px;
+
+		box-shadow: 5px 8px 12px black;
+	}
+	.carta-yen img{
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+		
+	}
+	.resaltar-yen{
+		font-weight: bold;
+		font-style: italic;
+		background-color: #000000;
+		border-radius: 10px;
+	}
+	/*jaskier*/
+	#inicio-jaskier{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: url(../imagenes/ps/jaskier3.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-jaskier h1{
+		font-size: 2.5em;
+	}
+
+	#introduccion-jaskier .container-jaskier{
+		display: flex;
+		justify-content: center;
+		
+	}
+	#introduccion-jaskier .texto-jaskier{
+		width: 50%;
+		text-align: initial;
+		padding: 0px 30px;
+		max-width: 600px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 100px;
+		
+		
+	}
+	#introduccion-jaskier h2{
+		font-size: 4em;
+		
+		
+	}
+	#introduccion-jaskier .texto-jaskier p{
+		font-size: 1.5em;
+		color: black; 
+	}
+	#introduccion-jaskier .contenedor-imagen-jaskier{
+		background-image:url(../imagenes/ps/jaskier2.jpg);
+		background-size: cover;
+		background-position: center center;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px;
+		height: 500px;
+		width: 400px;
+	}
+	#contenido-jaskier{
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-align: center;
+		
+	}
+	#contenido-jaskier h2{
+		padding: 10px;
+		text-shadow: 5px 5px 5px black;
+	}
+	#contenido-jaskier p{
+		font-family: "Baskervville SC", serif;
+		padding: 20px;
+		font-size: 2.2rem;
+		text-align: left;
+	}
+
+	#contenido-jaskier .carta-jaskier{
+		width: 70%;
+		height: 60vh;
+		border-radius: 20px;
+
+		box-shadow: 5px 8px 12px black;
+	}
+	.carta-jaskier img{
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+		
+	}
+	.resaltar-jaskier{
+		font-weight: bold;
+		font-style: italic;
+		background-color: #000000;
+		border-radius: 10px;
+	}
+	/*TEMPORADAS*/
+	#inicio-temporadas{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		)
+		,url(../imagenes/ps/temporadas.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-temporadas h1{
+		text-align: center;
+		padding: 20px;
+		font-size: 2em;
+	}
+	#contenido-temporadas{
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		text-align: center;
+		
+	}
+	#contenido-temporadas h2{
+		margin-top: 50px;
+		padding: 20px;
+		text-shadow: 5px 5px 5px black;
+	}
+	#contenido-temporadas p{
+		font-family: "Baskervville SC", serif;
+		padding: 20px;
+		font-size: 2.2rem;
+		text-align: left;
+	}
+
+	#contenido-temporadas .carta-temporadas{
+		width: 70%;
+		height: 60vh;
+		
+		border-radius: 20px;
+
+		box-shadow: 5px 8px 12px black;
+	}
+	.carta-temporadas img{
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+	}
+
+	/*EXTRAS*/
+	#inicio-extras{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		)
+		,url(../imagenes/ps/EXTRAS.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-extras h1{
+		text-align: center;
+		padding: 20px;
+		font-size: 2em;
+	}
+	/*CONTACTO*/
+	#inicio-contacto{
+		width: 100%;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 2em;
+		text-shadow: 5px 5px 5px black;
+
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		)
+		,url(../imagenes/ps/CONTACTO.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center center;
+		
+	}
+	#inicio-contacto h1{
+		text-align: center;
+		padding: 20px;
+		font-size: 2em;
+	}
 	
 }

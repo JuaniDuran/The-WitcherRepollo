@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon2.png">
+    <title>The Witcher - Personajes</title>
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html" class="nav-branding"><img src="imagenes/logo.png" alt="Logo The Witcher"></a>
+        </div> 
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav class="nav-bar" id="menu_bar">
+           <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">INICIO</a></li>
+                <li class="nav-item"><a href="personajes.html" class="nav-link">PERSONAJES</a></li>
+                <li class="nav-item"><a href="galeria.html" class="nav-link">GALERÍA</a></li>
+                <li class="nav-item"><a href="temporadas.html" class="nav-link">TEMPORADAS</a></li>
+                <li class="nav-item"><a href="extras.html" class="nav-link">EXTRAS</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="inicio-personajes">
+       <div class="primero">
+            <h1>Los Protagonistas</h1>
+        </div>  
+    </section>
+
+    <!-- <section id="introduccion-personajes"> 
+        <div class="container-personajes">
+            <div class="contenedor-imagen-personajes"></div>
+                <div class="texto-personajes">
+                <h2>GERALT</h2>
+                <p>¡Llegó el momento de la espada y el Hacha!<br>¡Llegó el momento de la Locura y el Desdén!</p>
+            </div>
+        </div> 
+    </section>-->
+
+    <section id="contenido-personajes">
+        <div class="container-personajes">
+            <h2 class="titulo-personajes">Personajes</h2>
+            <div class="divisiones-personajes">
+                   
+                        <div class="carta-personajes">
+                            <a href="geralt.html" class="link-galeria"><img src="imagenes/poster-geralt.jpg" alt="Link a galeria"></a>
+                            <p>Geralt</p>
+                        </div>
+                        <div class="carta-personajes">
+                            <a href="yennefer.html" class="link-galeria"><img src="imagenes/poster-yenneffer.jpg" alt="Link a galeria"></a>
+                            <p>Yennefer</p>
+                        </div>
+                        <div class="carta-personajes">
+                            <a href="ciri.html" class="link-galeria"><img src="imagenes/poster-ciri.jpg" alt="Link a galeria"></a>
+                            <p>Ciri</p>
+                        </div>
+                        <div class="carta-personajes">
+                            <a href="jaskier.html" class="link-galeria"><img src="imagenes/poster-jaskier.jpg" alt="Link a galeria"></a>
+                            <p>jaskier</p>
+                        </div>
+                    
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="frase">
+        <h2>"Aquellos que tienen algún código y se rigen por él, se les respeta y se les estima" - Geralt De Rivia</h2>
+    </section>
+
+    <footer>
+        
+        <div class="container">
+            <a href="https://www.instagram.com/witchernetflix?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="imagenes/redes/instagram_mobile.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/TheWitcherEnNetflix/?brand_redir=229625047732276&locale=es_LA" target="_blank"><img src="imagenes/redes/facebook_mobile.png" alt="Facebook"></a>
+            <a href="https://x.com/witchernetflix?lang=es" target="_blank"><img src="imagenes/redes/twitter_mobile.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/@Netflix/search?query=the%20witcher" target="_blank"><img src="imagenes/redes/youtube_mobile.png" alt="Youtube"></a>
+        </div>
+        <p>&copy; Todos los derechos reservados. Duran Juan Ignacio</p>
+    </footer>
+    <a href="#" class="back-to-top">
+        <span class="material-icons">arrow_upward</span>
+    </a>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
